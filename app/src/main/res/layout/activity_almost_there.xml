@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue"
+    tools:context=".AlmostThere">
+
+    <TextView
+        android:id="@+id/almostT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AlmostT"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:layout_marginTop="180dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/descAlmostT1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/descAlmostT1"
+        android:textColor="@color/shadowHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/almostT" />
+
+    <TextView
+        android:id="@+id/descAlmostT2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descAlmostT2"
+        android:textColor="@color/shadowHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descAlmostT1" />
+
+    <TextView
+        android:id="@+id/descAlmostT3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descAlmostT3"
+        android:textColor="@color/shadowHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descAlmostT2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_border"
+        android:layout_marginTop="60dp"
+        android:layout_marginHorizontal="28dp"
+        android:text="VERIFY"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/descAlmostT3"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
